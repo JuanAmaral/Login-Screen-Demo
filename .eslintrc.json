@@ -1,0 +1,49 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  // "overrides": [
+  //   {
+  //     "files": [ "src/**/*"]
+  //   }
+  // ],
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "react-hooks" //eslint-plugin-react-hooks
+  ],
+  "rules": {
+    "@next/next/no-img-element": "off",
+
+    //avisa quando o tiver faltando algo em algum hook
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": "off",
+    //O Next já importa o React globalmente então não precisa importar sempre
+    "react/react-in-jsx-scope": "off",
+    //Não precisar definir retorno da função quando esse retorno puder ser inferido
+    "@typescript-eslint/explicit-module-boundary-types": "off"
+  }
+}

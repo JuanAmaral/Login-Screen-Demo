@@ -1,0 +1,27 @@
+{
+  "name": "PDV - VENDA",
+  "short_name": "PDV - VENDA",
+  "theme_color": "#7276b8",
+  "background_color": "#0d0b2d",
+  "display": "fullscreen",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "256x256",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
