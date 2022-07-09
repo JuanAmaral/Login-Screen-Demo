@@ -1,10 +1,16 @@
 import React from 'react';
-import { StyledButton } from '../../Components/Button/styles';
 import * as Style from './style';
-
+import imgLogin from '../../img/login.jpg';
 export default function Home() {
   return (
     <Style.Container>
+      <Style.ContainerIconMarket>
+        <Style.IconMapMarkerAlt />
+        <h1>VISION GO</h1>
+      </Style.ContainerIconMarket>
+      <Style.ContainerImage>
+        <img src={imgLogin} width={'100%'}></img>
+      </Style.ContainerImage>
       <Style.BoxWhite>
         <Style.ContainerText>
           <Style.Text>Bem-vindo</Style.Text>

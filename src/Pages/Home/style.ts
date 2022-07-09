@@ -2,6 +2,10 @@ import styled from 'styled-components';
 import {Facebook}  from '@styled-icons/boxicons-logos/Facebook'
 import {Twitter}  from '@styled-icons/boxicons-logos/Twitter'
 import {GooglePlus}  from '@styled-icons/boxicons-logos/GooglePlus'
+import { MapMarkerAlt} from '@styled-icons/fa-solid/MapMarkerAlt'
+
+
+
 export const Container = styled.div`
   display: flex;
   flex: 1;
@@ -9,15 +13,48 @@ export const Container = styled.div`
   align-items: center;
   min-height: 100vh;
   background: #3e2791;
-  justify-content: flex-end;
+  
 `;
 
+export const ContainerImage = styled.div`
+  width: 100%;
+  display:flex;
+  opacity: 0.5;
+`;
+
+export const  ContainerIconMarket = styled.div`
+  position:absolute;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  top:4rem;
+  z-index: 2;
+  h1{
+    font-size: 2.5rem;
+    color:white;  
+    margin-top: 0rem;
+  }
+
+`;
+
+export const IconMapMarkerAlt = styled(MapMarkerAlt)`
+ width: 5rem;
+  height: 5rem;
+  color: White;
+ 
+`;
+
+
 export const BoxWhite = styled.div`
+  position: fixed;
+  bottom:0;
   background: white;
   height: 30rem;
   width: 84%;
   border-radius: 50px 50px 0px 0px;
   padding: 2rem;
+
+  
 `;
 export const ContainerText = styled.div`
   display:flex;
@@ -106,3 +143,4 @@ export const IconGoogle = styled(GooglePlus)`
   height: 1.5rem;
   color: White;
 `;
+
